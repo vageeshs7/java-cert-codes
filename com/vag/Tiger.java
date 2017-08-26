@@ -1,10 +1,13 @@
 package com.vag;
+import java.util.Random;
 
 class Test{
 	private int x;
+	
 	public String status()
 	{
-		return "success";
+		Random r = new Random();
+		return "success " + r.nextInt(10);
 	}
 }
 
